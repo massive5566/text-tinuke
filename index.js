@@ -23,7 +23,7 @@ function sendMessage() {
     });
 }
 
-cron.schedule('0 8 * * *', () => {
-  sendMessage();
+cron.schedule('* * * * ', () => {
+  //   sendMessage();
   console.log('Message sent!');
 });
