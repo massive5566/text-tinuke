@@ -23,7 +23,9 @@ function sendMessage() {
     });
 }
 
-cron.schedule('* * * * * *', () => {
-  //   sendMessage();
+console.log('App is running');
+
+cron.schedule('0 8 * * *', () => {
+  sendMessage();
   console.log('Message sent!');
 });
